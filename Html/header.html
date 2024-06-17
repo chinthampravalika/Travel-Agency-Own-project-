@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Css link-->
+    <link rel="stylesheet" href="/Css/Tourist.css">
+   
+    <!--bootstrap5-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"> 
+    
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+
+    
+  </head>
+<body>
+  <div class="hero-header">
+     <nav class="navbar container-fluid bg-dark">
+        <div class="container d-flex  text-white">
+          <ul class="nav me-auto">
+            <li class="nav-item px-2"><i class="fa-solid fa-location-dot"></i>&nbsp;123 street,New York,USA</li>
+            <li class="nav-item px-2"><i class="fa-solid fa-phone"></i>&nbsp;9059357369</li>
+            <li class="nav-item px-2"><i class="fa-solid fa-envelope"></i>&nbsp;pravalika044@gmail.com</li>
+          </ul>
+          <ul class="nav">
+            <li class="nav-item navlinks"><a href="#" class="nav-link link-dark px-2 text-white"><i class="fa-brands fa-twitter fs-4"></i></a></li>
+            <li class="nav-item navlinks"><a href="#" class="nav-link link-dark px-2 text-white"><i class="fa-brands fa-instagram fs-4"></i></a></li>
+            <li class="nav-item navlinks"><a href="#" class="nav-link link-dark px-2 text-white"><i class="fa-brands fa-youtube fs-4"></i></a></li>
+            <li class="nav-item navlinks"><a href="#" class="nav-link link-dark px-2 text-white"><i class="fa-brands fa-facebook fs-4"></i></a></li>
+            <li class="nav-item navlinks"><a href="#" class="nav-link link-dark px-2 text-white"><i class="fa-brands fa-linkedin fs-4"></i></a></li>
+          </ul>
+        </div>
+    </nav>
+  
+    <div class="navbar navbar-light  navbar-expand-md container main-header">
+        <a href="" class="navbar-brand fs-2" style="color: rgb(51, 153, 51);"><i class="fa-solid fa-location-dot"></i>&nbsp;Tourist</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="menu">
+          <ul class="navbar-nav ms-auto" id="paddingformenu">
+            <li class="nav-item">
+              <a href="#home" class="nav-link fs-5 text-dark">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#aboutus" class="nav-link fs-5 text-dark">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#servicestour" class="nav-link fs-5 text-dark">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="#packageslink" class="nav-link fs-5 text-dark">Packges</a>
+              </li>
+            <li class="dropdown nav-item">
+                <a href="#destinationlink" class="nav-link text-dark fs-5 active dropdown-toggle" data-bs-toggle="dropdown">Destination</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">page1</li>
+                  <li class="dropdown-item">page2</li>
+                  <li class="dropdown-item">page3</li>
+                  <li class="dropdown-item">page4</li>
+                  <li class="dropdown-item">page5</li>
+                </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#formlink" class="nav-link text-dark fs-5">Contact</a>
+            </li>
+            <button type="button" class="btn fs-5 rounded-pill" style="background-color: rgb(51, 153, 51);">Register</button>
+          </ul>
+        </div>
+       </div>    
+   <!--=====Home============-->
+   <div class="container-fluid position-relative p-8" id="home">
+    <div class="container-fluid bg-primary py-5 mb-5 ">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+            <h1 class="display text-white mb-3">Enojy your Vacation with us</h1>
+            <p class="fs-4 text-white mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, repudiandae.</p>
+            <div class="position-relative w-75 mx-auto" >
+              <!--input box-->
+              <input type="text" class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" placeholder="Eg:Thailand">
+              <!--button-->
+              <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--====About Us=================-->
+<div class="container mt-5 mb-5" id="aboutus">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="/images/image1.jpg"  alt="Placeholder Image" class="image image-fluid w-100 h-100" style="object-fit: cover;">
+    </div>
+    <div class="col-md-6 content">
+      <div>
+        <h5>About Us</h5>
+        <h2>Welcome to <span class="tourist" style="color: rgb(51, 153, 51) ;">Tourist</span></h2>
+        <p class="mb-4 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, laboriosam.</p>
+
+        <div class="row">
+         <div class="col-sm-6">
+          <p><i class="fa fa-arrow-right " style="color: rgb(51, 153, 51)"></i>&nbsp;First class flights</p>
+          <p><i class="fa fa-arrow-right " style="color: rgb(51, 153, 51)"></i>&nbsp;First class flights</p>
+          <p><i class="fa fa-arrow-right " style="color: rgb(51, 153, 51)"></i>&nbsp;First class flights</p>
+         </div>
+         <div class="col-sm-6">
+          <p><i class="fa fa-arrow-right " style="color: rgb(51, 153, 51)"></i>&nbsp;First class flights</p>
+          <p><i class="fa fa-arrow-right " style="color: rgb(51, 153, 51)"></i>&nbsp;First class flights</p>
+          <p><i class="fa fa-arrow-right " style="color: rgb(51, 153, 51)"></i>&nbsp;First class flights</p>
+         </div>
+        </div>
+        <button class="btn btn-lg mt-4" style="background-color:rgb(51, 153, 51) ;">Read More</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===============services===================-->
+<div class="container mb-4 " id="servicestour">
+  <div  class="d-flex justify-content-center">
+    <h5 style="color: rgb(51, 153, 51)">Services</h5>
+  </div>
+  <div class="d-flex justify-content-center">
+    <h2>Our Services</h2>
+  </div>
+</div>
+<div class="d-flex justify-content-center ">
+  <div class="row container">
+    <div class="col-md-6 col-lg-3 mt-3">
+      <div class="card services">
+        <div class="card-body p-5">
+          <div class="icons">
+            <i class="fa-solid fa-globe fs-1 mb-2" style="color: rgb(51, 153, 51)";></i>
+          </div>
+          <h5 class="card-title">World wide Tours</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatem.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mt-3">
+      <div class="card services">
+        <div class="card-body p-5">
+          <div class="icons">
+            <i class="fa-solid fa-hotel fs-1 mb-2" style="color: rgb(51, 153, 51)";></i>
+          </div>
+          <h5 class="card-title">Hotel Revervation</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatem.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mt-3">
+      <div class="card services">
+        <div class="card-body p-5">
+          <div class="icons">
+            <i class="fa-solid fa-user fs-1 mb-2" style="color: rgb(51, 153, 51)";></i>
+          </div>
+          <h5 class="card-title">Travel Guides</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatem.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mt-3">
+      <div class="card services">
+        <div class="card-body p-5">
+          <div class="icons">
+            <i class="fa-solid fa-gear fs-1 mb-2" style="color: rgb(51, 153, 51)";></i>
+          </div>
+          <h5 class="card-title">Event Management</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatem.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mt-3">
+      <div class="card services">
+        <div class="card-body p-5">
+          <div class="icons">
+            <i class="fa-solid fa-globe fs-1 mb-2" style="color: rgb(51, 153, 51)";></i>
+          </div>
+          <h5 class="card-title">World wide Tours</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatem.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mt-3">
+      <div class="card services">
+        <div class="card-body p-5">
+          <div class="icons">
+            <i class="fa-solid fa-globe fs-1 mb-2" style="color: rgb(51, 153, 51)";></i>
+          </div>
+          <h5 class="card-title">World wide Tours</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatem.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mt-3">
+      <div class="card services">
+        <div class="card-body p-5">
+          <div class="icons">
+            <i class="fa-solid fa-globe fs-1 mb-2" style="color: rgb(51, 153, 51)";></i>
+          </div>
+          <h5 class="card-title">World wide Tours</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatem.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mt-3">
+      <div class="card services">
+        <div class="card-body p-5">
+          <div class="icons">
+            <i class="fa-solid fa-globe fs-1 mb-2" style="color: rgb(51, 153, 51)";></i>
+          </div>
+          <h5 class="card-title">World wide Tours</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatem.</p>      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+     
+    <!--==============Destination=============-->
+    <div class="container-xxl py-5 destination" id="destinationlink">
+      <div class="container">
+          <div class="text-center">
+              <h6 class="section-title gb-white text-center px-3" style="color: rgba(51,151,51);">
+                  Destination
+              </h6>
+              <h1 class="mb-5">Popular Destination</h1>
+          </div>
+          
+          <div class="row g-3">
+              <div class="col-lg-7 col-md-6">
+                  <div class="row g-3">
+
+                      <div class="col-lg-12 col-md-12">
+                          <a href="" class="d-block position-relative overflow-hidden">
+                              <img src="/images/pexels-nandhukumar-450441.jpg" alt="" class="img-fluid ">
+                              <div class="bg-white position-absolute top-0 start-0 m-3 p-2 text-danger">30% OFF</div>
+                              <div class="bg-white position-absolute bottom-0 end-0 m-3 p-2">Thailand</div>
+                          </a>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                          <a href="" class="d-block position-relative overflow-hidden">
+                              <img src="/images/pexels-nubikini-386009.jpg" alt="" class="img-fluid ">
+                              <div class="bg-white position-absolute top-0 start-0 m-3 p-2 text-danger">90% OFF</div>
+                              <div class="bg-white position-absolute bottom-0 end-0 m-3 p-2">England</div>
+                          </a>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                          <a href="" class="d-block position-relative overflow-hidden">
+                              <img src="/images/pexels-nubikini-386009.jpg" alt="" class="img-fluid " >
+                              <div class="bg-white position-absolute top-0 start-0 m-3 p-2 text-danger">50% OFF</div>
+                              <div class="bg-white position-absolute bottom-0 end-0 m-3 p-2">Asteliya</div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-5 col-md-6" style="min-height: 350px;">
+                  <a href="" class="d-block position-relative h-100 overflow-hidden">
+                      <img src="/images/pexels-tranmautritam-119777.jpg" alt="" class="img-fluid position-absolute w-100 h-100" style="object-fit: cover;">
+                      <div class="bg-white position-absolute top-0 start-0 m-3 p-2 text-danger">50% OFF</div>
+                      <div class="bg-white position-absolute bottom-0 end-0 m-3 p-2">Landon</div>
+
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>            
+ 
+<!--========packages====================-->
+ 
+<div class="container packages" id="packageslink">
+  <div class="text-center">
+    <h3 class="" style="color: rgba(51,150,51)">Packages</h3>
+    <h1 class="mb-5">Awesome Packages</h1>
+  </div>
+  <div class="d-flex justify-content-center ">
+    <div class="card " style="width: 20rem;">
+      <img src="/images/img2.jpg" class="card-img-top" alt="...">
+      <div class="card-body border-bottom">
+        <div class="d-flex package-cards">
+          <h6 class="mx-2"><i class="fa-solid fa-location-dot" style="color: rgba(51,150,51);"></i>&nbsp;Thailand</h6>
+          <h6 class="mx-2"><i class="fa-regular fa-calendar-days" style="color: rgba(51,150,51);"></i>&nbsp;3 days</h6>
+          <h6 class="mx-2"><i class="fa-solid fa-user" style="color: rgba(51,150,51);"></i>&nbsp;2 persons</h6>
+        </div>
+        <div class="price text-center mt-3 ">
+          <h6 class="price fs-4">$169.00</h6>
+            <div class="">
+              <i class="fa-solid fa-star fs-5" style="color: rgba(51,150,51);"></i>
+              <i class="fa-solid fa-star fs-5" style="color: rgba(51,150,51);"></i>
+              <i class="fa-solid fa-star fs-5" style="color: rgba(51,150,51);"></i>
+              <i class="fa-solid fa-star  fs-5" style="color: rgba(51,150,51);"></i>
+              <i class="fa-solid fa-star  fs-5" style="color: rgba(51,150,51);"></i>
+            </div>
+        </div>
+         
+        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="d-flex justify-content-center mb-2 ">
+          <a href="#" class="btn  btn-sm px-3 btn-success" style="border-radius: 30px 0 0 30px;">Read More</a>
+          <a href="#" class="btn  btn-sm px-3 btn-success" style="border-radius: 0 30px 30px 0; border-left: 0.5px solid gray;">Book Now</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card" style="width: 22rem;">
+      <img src="/images/img2.jpg" class="card-img-top img-fluid" alt="...">
+      <div class="card-body border-bottom">
+        <div class="d-flex package-cards">
+          <h6 class="mx-2"><i class="fa-solid fa-location-dot" style="color: rgba(51,150,51);"></i>&nbsp;Vemulavada</h6>
+          <h6 class="mx-2"><i class="fa-regular fa-calendar-days" style="color: rgba(51,150,51);"></i>&nbsp;6 days</h6>
+          <h6 class="mx-2"><i class="fa-solid fa-user" style="color: rgba(51,150,51);"></i>&nbsp;5 persons</h6>
+        </div>
+        <div class="price text-center mt-3 ">
+          <h6 class="price fs-4">$169.00</h6>
+            <div class="">
+              <i class="fa-solid fa-star fs-5" style="color: rgba(51,150,51);"></i>
+              <i class="fa-solid fa-star fs-5" style="color: rgba(51,150,51);"></i>
+              <i class="fa-solid fa-star fs-5" style="color: rgba(51,150,51);"></i>
+              <i class="fa-solid fa-star  fs-5" style="color: rgba(51,150,51);"></i>
+              <i class="fa-solid fa-star  fs-5" style="color: rgba(51,150,51);"></i>
+            </div>
+        </div>
+         
+        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="d-flex justify-content-center mb-2 ">
+          <a href="#" class="btn  btn-sm px-3 btn-success" style="border-radius: 30px 0 0 30px;">Read More</a>
+          <a href="#" class="btn  btn-sm px-3 btn-success" style="border-radius: 0 30px 30px 0; border-left: 0.5px solid gray;">Book Now</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card" style="width: 20rem;">
+      <img src="/images/img2.jpg" class="card-img-top" alt="...">
+      <div class="card-body border-bottom">
+        <div class="d-flex package-cards">
+          <h6 class="mx-2"><i class="fa-solid fa-location-dot" style="color: rgba(51,150,51);"></i>&nbsp;Thailand</h6>
+          <h6 class="mx-2"><i class="fa-regular fa-calendar-days" style="color: rgba(51,150,51);"></i>&nbsp;3 days</h6>
+          <h6 class="mx-2"><i class="fa-solid fa-user" style="color: rgba(51,150,51);"></i>&nbsp;2 persons</h6>
+        </div>
+        <div class="price text-center mt-3 ">
+          <h6 class="price fs-4">$169.00</h6>
+            <div class="">
+              <i class="fa-solid fa-star fs-5" style="color: rgba(51,150,51);"></i>
+              <i class="fa-solid fa-star fs-5" style="color: rgba(51,150,51);"></i>
+              <i class="fa-solid fa-star fs-5" style="color: rgba(51,150,51);"></i>
+              <i class="fa-solid fa-star  fs-5" style="color: rgba(51,150,51);"></i>
+              <i class="fa-solid fa-star  fs-5" style="color: rgba(51,150,51);"></i>
+            </div>
+        </div>
+         
+        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="d-flex justify-content-center mb-2 ">
+          <a href="#" class="btn  btn-sm px-3 btn-success" style="border-radius: 30px 0 0 30px;">Read More</a>
+          <a href="#" class="btn  btn-sm px-3 btn-success" style="border-radius: 0 30px 30px 0; border-left: 0.5px solid gray;">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+
+  <!--==========Process==============-->
+  <div class="container mb-5 mt-5" id="processlink">
+    <div class="text-center">
+      <h4 style="color: rgba(51,150,51);">Process</h4>
+      <h1 class="mb-5">3 Easy Steps</h1>
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
+        <div class="process-card position-relative">
+          <div class="text-center">
+            <i class="fa-solid fa-globe fs-2 rounded-pill" style="border:15px solid green; position: relative; top: -30px;"></i>
+          </div>
+          <h4 class="d-flex justify-content-center ">Choose A Destination</h4>
+          <p class="text-center p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum fuga molestiae quo ut quis qui natus quae alias sit delectus.</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
+        <div class="process-card position-relative">
+          <div class="text-center">
+            <i class="fa-solid fa-users fs-2 rounded-pill" style="border:15px solid green; position: relative; top: -30px;"></i>
+          </div>
+          <h4 class="d-flex justify-content-center ">Fly Today</h4>
+          <p class="text-center p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum fuga molestiae quo ut quis qui natus quae alias sit delectus.</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
+        <div class="process-card position-relative">
+          <div class="text-center">
+            <i class="fa-solid fa-dollar-sign fs-2 rounded-pill" style="border:15px solid green; position: relative; top: -30px;"></i>
+          </div>
+          <h4 class="d-flex justify-content-center ">Pay Online</h4>
+          <p class="text-center p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum fuga molestiae quo ut quis qui natus quae alias sit delectus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Travel Guide-->
+  <div class="container" id="travelguidlink">
+    <div class="text-center">
+      <h4 class="" style="color: rgba(51,150,51);">Travel Guide</h4>
+      <h1 class="mb-5">Meet Our Guide</h1>
+    </div>
+    
+    <div class="row g-3 ">
+      <div class="col-md-6 col-lg-3">
+        <div class="card travel-guide" style="width: 18rem;">
+          <img src="/images/person1.jpg" class="card-img-top" alt="...">
+          <div class="position-relative d-flex justify-content-center" style="margin-top: -18px;">
+            <a href="" class="btn btn-square mx-1">
+              <i class="fab fa-twitter rounded-pill" style="border: 10px solid white;"></i>
+            </a>
+            <a href="" class="btn btn-square mx-1">
+              <i class="fab fa-facebook-f rounded-pill" style="border:10px solid white"></i>
+            </a>
+            <a href="" class="btn btn-square mx-1">
+              <i class="fab fa-instagram rounded-pill" style="border:10px solid white"></i>
+            </a>
+          </div>
+          <div class="card-body">
+            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card travel-guide" style="width: 18rem;">
+          <img src="/images/person2.jpg" class="card-img-top" alt="...">
+          <div class="position-relative d-flex justify-content-center" style="margin-top: -18px;">
+            <a href="" class="btn btn-square mx-1">
+              <i class="fab fa-twitter rounded-pill" style="border: 10px solid white;"></i>
+            </a>
+            <a href="" class="btn btn-square mx-1">
+              <i class="fab fa-facebook-f rounded-pill" style="border:10px solid white"></i>
+            </a>
+            <a href="" class="btn btn-square mx-1">
+              <i class="fab fa-instagram rounded-pill" style="border:10px solid white"></i>
+            </a>
+          </div>
+          <div class="card-body">
+            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card travel-guide" style="width: 18rem;">
+          <img src="/images/person4.avif" class="card-img-top" alt="...">
+          <div class="position-relative d-flex justify-content-center" style="margin-top: -18px;">
+            <a href="" class="btn btn-square mx-1">
+              <i class="fab fa-twitter rounded-pill" style="border: 10px solid white;"></i>
+            </a>
+            <a href="" class="btn btn-square mx-1">
+              <i class="fab fa-facebook-f rounded-pill" style="border:10px solid white"></i>
+            </a>
+            <a href="" class="btn btn-square mx-1">
+              <i class="fab fa-instagram rounded-pill" style="border:10px solid white"></i>
+            </a>
+          </div>
+          <div class="card-body">
+            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card travel-guide" style="width: 18rem;">
+          <img src="/images/person3.jpg" class="card-img-top" alt="...">
+          <div class="position-relative d-flex justify-content-center" style="margin-top: -18px;">
+            <a href="" class="btn btn-square mx-1">
+              <i class="fab fa-twitter rounded-pill" style="border: 10px solid white;"></i>
+            </a>
+            <a href="" class="btn btn-square mx-1">
+              <i class="fab fa-facebook-f rounded-pill" style="border:10px solid white"></i>
+            </a>
+            <a href="" class="btn btn-square mx-1">
+              <i class="fab fa-instagram rounded-pill" style="border:10px solid white"></i>
+            </a>
+          </div>
+          <div class="card-body">
+            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <!--Form registation-->
+    <div class="container form-register  mt-5 bg-dark text-white" id="formlink">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mt-5 mx-5">
+            <h4 class="">Booking</h4>
+            <h2 class="">Online Booking</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pmodi quaerat minus voluptate maxime corrupti, quis expedita velit! Cumque.</p>
+            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nulla totam officiis corporis mollitia ea iusto doloremque ut rem dignissimos.corporis mollitia ea iusto doloremque ut rem dignissimos.
+            </p>
+            <button class="btn btn-lg text-white border hover bg-success" >Read More</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h1 class="text-white mt-5">
+            Book A Tour
+          </h1>
+          <form action="">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name">
+                  <label for="">Your Name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="email" class="form-control bg-transparent" id="email" placeholder="Your email">
+                  <label for="">Your email</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating" id="date3">
+                  <input type="text" class="form-control bg-transparent" id="datetime">
+                  <label for="">Date & Time</label>
+                </div>
+              </div>
+
+              <!--section box-->
+               <div class="col-md-6">
+                  <div class="form-floating">
+                    <select name="" id="select" class="form-select bg-transparent">
+                      <option value="1">Destination1</option>
+                      <option value="2">Destination2</option>
+                      <option value="3">Destination3</option>
+                    </select>
+                    <label for="">Destination</label>
+                  </div>
+               </div>
+               <div class="col-12">
+                <div class="form-floating">
+                  <textarea name="" id="" class="form-control bg-transparent" placeholder="special request" style="height: 100px;"></textarea>
+                  <label for="">Special request</label>
+                </div>
+               </div>
+               <div class="col-12">
+                <button class="btn btn-outline-light w-100 py-3" type="submit">Book Now</button>
+               </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+   <!--Testimonial-->
+   <div class="container mt-5" id="testimoniallink">
+    <div class="text-center mb-4">
+       <h6 class="" style="color:rgba(51,150,51);">Testimonial</h6>
+        <h2>Our Clients Say!!!</h2>
+    </div>
+    <div class="owl-carousel owl-theme">
+        <div class="testimonial">
+            <img src="/images/person1.jpg" alt="Client 1"  class="bg-white rounded-circle shadow p-1 mx-auto mb-3" style="width: 80px; height: 80px;">
+            <h4>John Doe</h4>
+            <p>New York, USA</p>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, illo? Praesentium illo voluptates possimus beatae veritatis, ullam optio accusantium sint dolore rem, consequuntur vel error nam facere accusamus assumenda nihil, nobis sunt quia consectetur? Itaque nemo dolorem aspernatur exercitationem obcaecati consectetur excepturi ab suscipit. Veritatis velit provident ipsa magni ea!</p>
+        </div>
+        <div class="testimonial">
+            <img src="/images/person2.jpg" alt="Client 2"  class="bg-white rounded-circle shadow p-1 mx-auto mb-3" style="width: 80px; height: 80px;">
+            <h4>John Doe</h4>
+            <p>New York, USA</p>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odio facere exercitationem natus voluptates quaerat, veniam consequatur nostrum commodi minus nobis dolores vitae voluptas. Ut necessitatibus possimus, a et recusandae, nihil quae minus itaque ab sint debitis blanditiis nesciunt beatae officia quisquam eius molestias nisi sapiente! Itaque officia amet modi!</p>
+        </div>
+        <div class="testimonial">
+            <img src="/images/person3.jpg" alt="Client 3"  class="bg-white rounded-circle shadow p-1 mx-auto mb-3" style="width: 80px; height: 80px;">
+            <h4>John Doe</h4>
+            <p>New York, USA</p>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at praesentium nam soluta ullam, itaque aut accusantium. Tempore labore id dolore unde esse, odio praesentium sequi suscipit, inventore, accusantium nam sapiente earum quo quibusdam obcaecati quod eius consectetur cupiditate. Consequuntur corrupti in commodi necessitatibus, aperiam ut asperiores vero eos neque!</p>
+        </div>
+        <div class="testimonial">
+            <img src="/images/person4.avif" alt="Client 4"  class="bg-white rounded-circle shadow p-1 mx-auto mb-3" style="width: 80px; height: 80px;">
+            <h4>John Doe</h4>
+            <p>New York, USA</p>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem esse ullam nisi animi! Natus eligendi nulla nemo placeat, corporis similique magnam fugit! Provident ut nam molestias, excepturi iusto alias eligendi sint minima quae impedit vel ratione a hic odio! Maiores cumque, veniam rerum eius temporibus ab unde id maxime molestias!</p>
+        </div>
+       
+       
+    </div>
+</div>
+
+
+<!--================Footer=================-->
+<div class="container Footer-section bg-dark text-white" id="footerlink">
+  <div class="row">
+     <div class="col-md-6 col-lg-3">
+      <h4 class="px-5 mt-5 mb-3">Company</h4>
+      <div class="px-5 ">
+        <p><i class="fa-solid fa-greater-than fs-6"></i>&nbsp;&nbsp; About US</p>
+        <p><i class="fa-solid fa-greater-than fs-6"></i>&nbsp;&nbsp; Contact  US</p>
+        <p><i class="fa-solid fa-greater-than fs-6"></i>&nbsp;&nbsp; privacy policy</p>
+        <p><i class="fa-solid fa-greater-than fs-6"></i>&nbsp;&nbsp; Term & conditions</p>
+        <p><i class="fa-solid fa-greater-than fs-6"></i>&nbsp;&nbsp; FAQ help</p>
+      </div>
+     </div>
+     <div class="col-md-6 col-lg-3">
+      <h4 class="px-5 mt-5 mb-3">Contact</h4>
+      <div class="px-5">
+        <p><i class="fa fa-location-dot"></i>&nbsp;&nbsp; 123 street, New York, USA</p>
+        <p><i class="fa fa-phone"></i>&nbsp;&nbsp; +91 7845367864</p>
+        <p><i class="fa fa-envelope"></i>&nbsp;&nbsp; abcde044@gmail.com</p>
+      </div>
+      <div class="d-flex px-5">
+        <ul class="nav">
+          <li class="nav-item navlinks"><a href="#" class="nav-link link-dark px-2 text-white"><i class="fa-brands fa-twitter fs-4 rounded-circle " ></i></a></li>
+          <li class="nav-item navlinks"><a href="#" class="nav-link link-dark px-2 text-white btn"><i class="fa-brands fa-instagram fs-4 "></i></a></li>
+          <li class="nav-item navlinks"><a href="#" class="nav-link link-dark px-2 text-white"><i class="fa-brands fa-youtube fs-4 "></i></a></li>
+          <li class="nav-item navlinks"><a href="#" class="nav-link link-dark px-2 text-white"><i class="fa-brands fa-facebook fs-4"></i></a></li>
+          <li class="nav-item navlinks"><a href="#" class="nav-link link-dark px-2 text-white"><i class="fa-brands fa-linkedin fs-4"></i></a></li>
+        </ul>
+      </div>
+     </div>
+     <div class="col-md-6 col-lg-3 ">
+      <h4 class=" mt-5 mb-3">Gallary</h4>
+        <div class=>
+          <img src="/images/img1.jpg" alt="" class="img-fluid  mb-4" style="border: 3px solid white; width: 90px; height: 80px;">
+          <img src="/images/img1.jpg" alt=""  class="img-fluid  mb-4" style="border: 3px solid white; width: 90px; height: 80px;">
+          <img src="/images/img1.jpg" alt=""  class="img-fluid  mb-4" style="border: 3px solid white; width: 90px; height: 80px;">
+          <img src="/images/img1.jpg" alt="" class="img-fluid  " style="border: 3px solid white; width: 90px; height: 80px;">
+          <img src="/images/img1.jpg" alt=""  class="img-fluid  " style="border: 3px solid white; width: 90px; height: 80px;">
+          <img src="/images/img1.jpg" alt=""  class="img-fluid" style="border: 3px solid white; width: 90px; height: 80px;">
+        </div>
+     </div>
+     <div class="col-md-6 col-lg-3">
+      <h4 class=" mt-5 mb-3">New Seltter</h4>
+      <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, deserunt.</p>
+      <div class="formtype position-relative">
+        <input type="text" class="form-control p-3" placeholder="Your Email">
+        <div class="searchtype position-absolute top-0 mt-3 end-0 me-2 ">
+           <button type="text" class="btn btn-sm btn-primary " style="width: 100px;">Search</button>
+        </div>
+      </div>
+
+     </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--Jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--Bootstrap js links-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+
+<!--js file-->
+<script src="/Javascript/Tourist.js"></script>
+</body>
+</html>

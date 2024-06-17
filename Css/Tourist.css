@@ -1,0 +1,73 @@
+.hero-header{
+   background:linear-gradient(rgba(20,20,31,0.7),rgba(20,20,31,0,7),url(/images/bgimage.jpg));
+   
+   
+
+}
+.card:hover{
+  background-color: rgba(51,153,51,0.8);
+  transition: 2s;
+}
+a img:hover{
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.packages .package-cards{
+  border-bottom: 0.2px solid rgb(230, 221, 221);
+  border-width: 100%;
+ 
+  
+}
+.process-card{
+  border: 1px solid gold;
+ 
+}
+.travel-guide img:hover{
+ transform: scale(1.1);
+ transition: 0.5s;
+}
+
+/*==========testimonial-carousel==========*/
+.testimonial {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd; /* Add border */
+  border-radius: 10px; /* Optional: rounded corners */
+  margin: 10px; /* Optional: add margin between testimonials */
+  background-color: #fff; /* Default background color white */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+.testimonial img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.testimonial h4 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.testimonial p {
+  font-size: 0.9rem;
+  color: #777;
+}
+.testimonial.active {
+  background-color: #a5d618; /* Green background for active testimonial */
+  color: #fff;
+}
+.owl-dots .owl-dot span {
+  background: green; /* Green color for dots */
+}
+.owl-dots .owl-dot.active span,
+.owl-dots .owl-dot:hover span {
+  background: darkgreen; /* Darker green for active and hover states */
+}
+
+/*=================Form-register=============*/
+.form-register{
+ 
+  width: 100%;
+  height: 600px;
+
+}

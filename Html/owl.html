@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Carousel</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Custom CSS for styling -->
+    <style>
+        .testimonial {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd; /* Add border */
+            border-radius: 10px; /* Optional: rounded corners */
+            margin: 10px; /* Optional: add margin between testimonials */
+            background-color: #fff; /* Default background color white */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+        .testimonial img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .testimonial h4 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .testimonial p {
+            font-size: 0.9rem;
+            color: #777;
+        }
+        .testimonial.active {
+            background-color: #a5d618; /* Green background for active testimonial */
+            color: #fff;
+        }
+        .owl-dots .owl-dot span {
+            background: green; /* Green color for dots */
+        }
+        .owl-dots .owl-dot.active span,
+        .owl-dots .owl-dot:hover span {
+            background: darkgreen; /* Darker green for active and hover states */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <h2>Our Clients Say!!!</h2>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="testimonial">
+                <img src="/images/person1.jpg" alt="Client 1"  class="bg-white rounded-circle shadow p-1 mx-auto mb-3" style="width: 80px; height: 80px;">
+                <h4>John Doe</h4>
+                <p>New York, USA</p>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+            </div>
+            <div class="testimonial">
+                <img src="/images/person2.jpg" alt="Client 2"  class="bg-white rounded-circle shadow p-1 mx-auto mb-3" style="width: 80px; height: 80px;">
+                <h4>John Doe</h4>
+                <p>New York, USA</p>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+            </div>
+            <div class="testimonial">
+                <img src="/images/person3.jpg" alt="Client 3"  class="bg-white rounded-circle shadow p-1 mx-auto mb-3" style="width: 80px; height: 80px;">
+                <h4>John Doe</h4>
+                <p>New York, USA</p>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+            </div>
+            <div class="testimonial">
+                <img src="/images/person4.avif" alt="Client 4"  class="bg-white rounded-circle shadow p-1 mx-auto mb-3" style="width: 80px; height: 80px;">
+                <h4>John Doe</h4>
+                <p>New York, USA</p>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+            </div>
+            <div class="testimonial">
+                <img src="/images/person1.jpg" alt="Client 5"  class="bg-white rounded-circle shadow p-1 mx-auto mb-3" style="width: 80px; height: 80px;">
+                <h4>John Doe</h4>
+                <p>New York, USA</p>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+            </div>
+            <div class="testimonial">
+                <img src="/images/person2.jpg" alt="Client 6"  class="bg-white rounded-circle shadow p-1 mx-auto mb-3" style="width: 80px; height: 80px;">
+                <h4>John Doe</h4>
+                <p>New York, USA</p>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          dots:true,
+          autoplay:true,
+          autoplayTimeout:3000, // 3 seconds
+          autoplayHoverPause:true,
+          items: 3,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:2
+              },
+              1000:{
+                  items:3
+              }
+          }
+      });
+
+      owl.on('changed.owl.carousel', function(event) {
+          var items = event.item.count;     // Number of items
+          var item = event.item.index;     // Position of the current item
+          $('.testimonial').removeClass('active');
+          $('.owl-item').eq(event.item.index + Math.floor(event.page.size / 2)).find('.testimonial').addClass('active');
+      });
+
+      // Trigger the changed event on initialization
+      owl.trigger('changed.owl.carousel');
+    });
+    </script>
+</body>
+</html>
